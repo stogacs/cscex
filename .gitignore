@@ -1,0 +1,8 @@
+# Target directories
+target/
+out/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
