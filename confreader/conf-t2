@@ -1,0 +1,71 @@
+# key = value
+
+# Valid types are:
+#   - string (surrounded by ""), ex: "John"
+#   - integer, ex: 1
+#   - floating point, ex: 23.20
+#   - boolean, ex: true
+
+# Nested objects are allowed, may be:
+# On one line, comma delimited
+# key = { nested-key-1 = "v1", nested-key-2, = 2, nested-key-3 = { nn-key = "v3" }}
+#
+# Or a mixture of multi line and comma delimited one-line:
+# key = {
+#   nested-key-1 = "v1'
+#   nested-key-2 = 2
+#   nested-key-3 = { nn-key = "v3" }
+# }
+#
+# Or:
+# key = {
+#   ...
+#   nested-key-3 = {
+#       nn-key = "v3"
+#   }
+# }
+
+# Arrays are allowed, elements may be of different types:
+# On one line
+# key = [ "v1", "v2", 3, true, [ 2, "300"] ]
+#
+# Or:
+# key = [
+#   "v1"
+#   "v2"
+#   3
+#   true
+#   [ 2, "300" ]
+# ]
+#
+# Or:
+# key = [
+#   ...
+#   true
+#   [
+#       2
+#       "300"
+#   ]
+# ]
+
+port = 8080
+hostname = "0.0.0.0"
+db = {
+    path = "/tmp/a.db"
+    create = true
+}
+
+refresh = 3
+
+users = ["John" "James"]
+allowed-hosts = [
+    "1.1.1.1"
+    "2.2.2.2"
+    [ "3.3.3.3", "4.4.4.4" ],
+    true,
+    [
+        5
+        6
+    ],
+    { host = "0.0.0.0", port = 8081 }
+]
