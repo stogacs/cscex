@@ -23,10 +23,10 @@ No semicolon or comma or anything marks the end of the line.
 
 Valid types are:
 
-- `string` : surrounded by double quotes (" "); ex: "John"
-- `integer` : ex: 13
-- `floating point` : ex: 23.20
-- `boolean` : ex: true
+- `string` : surrounded by double quotes (" "); ex: `"John"`
+- `integer` : ex: `13`
+- `floating point` : ex: `23.20`
+- `boolean` : ex: `true`
 
 Nested properties are allowed; they are surrounded by curly braces (`{` and `}`).
 The nested properties themselves will be on their own lines:
@@ -162,8 +162,9 @@ properties mirror those specified in the configuration file.
 
 ```java
 // ...
-public static void main(String[] args) {
-    ConfReader reader = new ConfReader();
-    Conf c = reader.parse(new File("conf"), Conf.class);
-}
+
+ConfReader reader = new ConfReader();
+Conf c = reader.parse(new File("conf"), Conf.class);
+
+// ...
 ```
