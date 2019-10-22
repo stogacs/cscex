@@ -1,8 +1,10 @@
 # Target directories
 target/
 out/
+__pycache__/
 
 # IDE files
 .vscode/
+.workspace/
 .idea/
 *.iml
