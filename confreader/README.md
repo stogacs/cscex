@@ -9,12 +9,8 @@ a solution for Type 2 will award **60 points**.
 
 ## Starter Code
 
-Minimal starter code has been provided for Java and Python, but you may use any
+Minimal starter code has been provided for Java, Python, JavaScript, Typescript, PHP, Ruby, and C#, but you may use any
 language you wish. 
-
-To use the provided Java starter code, write your implementation in the `parse`
-method of the `ConfReader` class. 
-It is expected that the configuration file be parsed into a `Map<String, Object>`.
 
 # Configuration Types
 
