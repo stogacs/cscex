@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Casino {
 
   public static void main(String[] args) {
@@ -11,8 +13,15 @@ public class Casino {
   }
 
   public static int solve(int[] a) {
-    // Your implementation here...
+    int count = 0;
 
-    return 0;
+    while (a[0] != 0 && a[1] != 0 && a[2] != 0) {
+      Arrays.sort(a);
+      a[1]--;
+      a[2]--;
+      count++;
+    }
+
+    return count;
   }
 }
