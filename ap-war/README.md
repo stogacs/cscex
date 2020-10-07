@@ -63,9 +63,9 @@ Return `"Underclassmen are victorious"`if the underclassmen win, or
 
 Some example test cases:
 
-    assert  under_vs_upper("0 0 0 0 0 10", "0 0 0 0 0 0 0"), "Underclassmen are victorious");
-    assert  under_vs_upper("0 0 0 0 0 0", "0 0 0 0 0 0 10"), "Upperclassmen are victorious");
-    assert  under_vs_upper("0 0 0 0 0 10", "0 0 0 0 0 0 10"), "No victor on this battlefield");
+    assert  under_vs_upper("0 0 0 0 0 10", "0 0 0 0 0 0 0") == "Underclassmen are victorious"
+    assert  under_vs_upper("0 0 0 0 0 0", "0 0 0 0 0 0 10") == "Upperclassmen are victorious"
+    assert  under_vs_upper("0 0 0 0 0 10", "0 0 0 0 0 0 10") == "No victor on this battlefield"
 
 ## Disclaimer(s)
 
