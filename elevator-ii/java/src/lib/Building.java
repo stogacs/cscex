@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.List;
 
 public class Building {
-  private Map<Integer, List<Person>> people;
-  private int floors;
+  private final Map<Integer, List<Person>> people;
+  private final int floors;
 
   public Building(int floors, Map<Integer, List<Person>> people) {
     this.floors = floors;

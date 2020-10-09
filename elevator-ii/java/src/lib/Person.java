@@ -1,8 +1,8 @@
 package lib;
 
 public class Person {
-  private int weight;
-  private int dest;
+  private final int weight;
+  private final int dest;
 
   public Person(int weight, int dest) {
     this.weight = weight;

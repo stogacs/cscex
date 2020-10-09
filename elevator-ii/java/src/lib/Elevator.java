@@ -1,15 +1,12 @@
 package lib;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Elevator {
-  private int weightCapacity;
-  private int numCapacity;
-  private Building building;
-  private List<Person> passengers;
+  private final int weightCapacity;
+  private final int numCapacity;
+  private final Building building;
+  private final List<Person> passengers;
   private int currentFloor;
 
   public Elevator(int weightCapacity, int numCapacity, Building building, int currentFloor) {
@@ -22,7 +19,7 @@ public class Elevator {
     this.building = building;
     this.currentFloor = currentFloor;
 
-    this.passengers = new ArrayList<Person>();
+    this.passengers = new ArrayList<>();
   }
 
   protected boolean moveUp() {
@@ -46,16 +43,16 @@ public class Elevator {
   protected void openDoors() {
     this.passengers.stream()
                    .filter(p -> p.dest() == this.currentFloor)
-                   .forEach(p -> this.passengers.remove(p));
+                   .forEach(this.passengers::remove);
     List<Person> waiting = this.building.people().remove(this.currentFloor);
-    Collections.sort(waiting, (a, b) -> a.weight() - b.weight());
+    waiting.sort(Comparator.comparingInt(Person::weight));
 
     boolean first = false;
     for (Person p : waiting) {
       boolean added = this.addPerson(p);
       if (added) {
         if (first) {
-          this.building.people().put(this.currentFloor, Arrays.asList(p));
+          this.building.people().put(this.currentFloor, Collections.singletonList(p));
           first = true;
         } else {
           this.building.people().get(this.currentFloor).add(p);
@@ -92,7 +89,7 @@ public class Elevator {
   }
 
   public int numCapacity() {
-    return this.numCapacity();
+    return this.numCapacity;
   }
 
   public Building building() {
