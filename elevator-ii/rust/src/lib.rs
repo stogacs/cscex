@@ -126,13 +126,14 @@ impl<'a> Elevator<'a> {
         };
         waiting.sort_by(|a, b| a.dest.cmp(&b.dest));
 
-        let first = false;
+        let mut first = false;
         for p in waiting.into_iter() {
             let q = self.add_person(p);
             match q {
                 Some(v) => {
                     if first {
                         self.building.people.insert(self.current_floor, vec![v]);
+                        first = true;
                     } else {
                         let l = self.building.people.get_mut(&self.current_floor).unwrap();
                         l.push(v);
