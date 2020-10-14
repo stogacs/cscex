@@ -37,6 +37,14 @@ that there is no solution.
 
 You can assume that the inputs are non-negative integers.
 
-# Note
+## Examples
+
+    get_skill_levels("1 4", "3 8", "7 24") --> "4 1" 
+
+    get_skill_levels("11 13", "5 17", "102 176") --> "7 5"
+
+    get_skill_levels("1 5", "2 10", "5 4") --> "-1 -1"
+
+## Note
 
 Taken from PClassic 2016 Fall and modified.
