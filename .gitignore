@@ -2,6 +2,7 @@
 target/
 out/
 __pycache__/
+*.class
 
 # IDE files
 .vscode/
