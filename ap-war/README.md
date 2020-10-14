@@ -9,20 +9,20 @@ However, not all AP classes are worth the same.
 On the side of the underclassmen, the subject areas have the following
 worth:
 
-- English: 0
-- Mathematics: 3
-- Foreign Language: 5
-- Science: 6
-- Social Studies: 8
+-   English: 0
+-   Mathematics: 3
+-   Foreign Language: 5
+-   Science: 6
+-   Social Studies: 8
 
 On the side of the upperclassmen, the subject areas have the following
 worth:
 
-- Social Studies: 3
-- English: 4
-- Foreign Language: 5
-- Mathematics: 5
-- Science: 8
+-   Social Studies: 3
+-   English: 4
+-   Foreign Language: 5
+-   Mathematics: 5
+-   Science: 8
 
 If you add up the worth of the side of the underclassmen and compare it
 with the worth of the side of upperclassmen, the side with the larger
@@ -74,3 +74,7 @@ necessarily represent the views of the question writer.
 
 The question writer is not promoting antagonistic relations between
 underclassmen and upperclassmen.
+
+## Note
+
+Taken from CodeWars and modified.
