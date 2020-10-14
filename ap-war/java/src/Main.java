@@ -1,7 +1,5 @@
 public class Main {
-  private static int counter = 0;
-
-  // Implement this function!
+  // Implement this method!
   public static String underVsUpper(String under, String upper) {
     // Replace this with your implementation...
     throw new UnsupportedOperationException("Not yet implemented!");
@@ -63,7 +61,7 @@ public class Main {
           printTestError(id, "Assertion failed: " + result + " != " + answer);
         }
       } catch (Exception e) {
-        printTestError(id, "Exception caught: " + e.getMessage());
+        printTestError(id, "Exception caught: " + e);
       }
     }
 
