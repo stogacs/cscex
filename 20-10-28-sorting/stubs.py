@@ -1,6 +1,12 @@
+import random
+
+def randlist():
+    # Change 500 to something smaller if too much
+    return random.sample(range(0, 100), 500)
+
 list1 = [5, 4, 3, 2, 1]
 list2 = [-32, 6, 3, -55, 626]
-list3 = [1, 2, 3, 4, 99, 5]
+list3 = randlist()
 
 def list_to_str(l):
 
