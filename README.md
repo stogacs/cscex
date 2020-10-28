@@ -12,6 +12,7 @@ in club meetings on a ??-weekly basis.
 
 | Date       | Exercise          | Available Languages                                 | Directory                                       |
 | :--------- | :---------------- | :-------------------------------------------------- | :---------------------------------------------- |
+| 2020/10/21 | Recursion         | Python                                              | [recursion](20-10-21-recursion)                 |
 | 2020/10/14 | Quarantine Skills | Java, Python                                        | [quarantine-skills](20-10-14-quarantine-skills) |
 | 2020/10/14 | revrot            | Java, Python                                        | [revrot](20-10-14-revrot)                       |
 | 2020/10/14 | AP War            | Java, Python, Rust                                  | [ap-war](20-10-14-ap-war/)                      |
