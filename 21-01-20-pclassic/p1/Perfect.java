@@ -13,5 +13,6 @@ public class Perfect {
 
   public static boolean isPerfect(int n) {
     // Your implementation here!
+    return false;
   }
 }

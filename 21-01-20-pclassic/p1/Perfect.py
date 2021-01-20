@@ -1,9 +1,9 @@
 import math
 
 
-def is_perfect(n):
+def is_perfect(n) -> bool:
     # Your implementation here!
-    pass
+    return False
 
 
 if __name__ == '__main__':
