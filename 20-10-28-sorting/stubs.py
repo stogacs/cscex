@@ -1,3 +1,5 @@
+# Courtesy of Jeffrey Tan
+
 import random
 
 def randlist():
