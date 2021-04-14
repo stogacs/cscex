@@ -6,9 +6,7 @@ import java.util.stream.IntStream;
 public class ArrayDiff {
 
     public static int[] arrayDiff(int[] a, int[] b) {
-        Set<Integer> bSet = IntStream.of(b).boxed().collect(Collectors.toSet());
-        return IntStream.of(a).filter(x -> !bSet.contains(x)).toArray();
-        // throw new UnsupportedOperationException("Not implemented!");
+        throw new UnsupportedOperationException("Not implemented!");
     }
 
 
